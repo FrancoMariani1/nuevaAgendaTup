@@ -13,7 +13,12 @@ const routes: Routes = [
   {
     path: "registrarse",
     loadChildren: () => import('./public/pages/registrarse/registrarse.module').then(m => m.RegistrarseModule)
+  },
+  {
+    path: "contactos",
+    loadChildren: () => import('./public/pages/contactos/contactos.module').then(m => m.ContactosModule)
   }
+
 
 ];
 
