@@ -1,7 +1,19 @@
-<p>principal works!</p>
+<!-- <p>principal works!</p> -->
 
-<div id="container">
-    <h1>Mi agenda virtual</h1>
-    <button id="agregar">+</button>
-    <button id="buscar"><img src= "./../assets/iconos/magnifying-glass-solid.svg"> </button>
+<!-- <div class = "flex-container">
+  <div></div>
+</div> -->
+<div class="container">
+
+    <span>Mi agenda virtual</span>
+
+    <div class="iniciarSesion">
+    <li><a [routerLink]="['/iniciar']">Iniciar Sesión</a></li>
+    </div>
+
+    <div class="yaTienesCuenta">
+    <span> No tienes cuenta?</span>
+    <li><a [routerLink]="['/registrarse']">Registrarse</a></li>
+    </div>
+
   </div>

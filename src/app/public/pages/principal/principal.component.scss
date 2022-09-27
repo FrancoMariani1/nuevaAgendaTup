@@ -1,0 +1,222 @@
+// @use "./../assets/styles/variables.scss";
+
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    
+    height: 982px;
+    width: 1512px;
+    border-radius: 0px;
+    background-color: #BBCDDB;
+
+    font-family: Poppins;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 400px;
+    letter-spacing: 0em;
+    text-align:center;
+
+    
+    
+
+}
+
+
+.iniciarSesion{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-top: auto;
+    
+    height: 118px;
+    width: 594px;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #9BC1DE 0%, rgba(144, 170, 190, 0.880208) 11.98%, rgba(144, 170, 190, 0) 100%);
+
+    font-family: Poppins;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+}
+
+.yaTienesCuenta{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+
+    height: 112px;
+    width: 1512px;
+    background-color: #A9B2BF;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 20px;
+    text-align: center;
+
+
+}
+
+// .container{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: center;
+//     // flex-wrap: wrap;
+//     background-color: #BBCDDB;
+//     height: 982px;
+//     width: 1512px;
+    
+//     border-radius: 0px;
+//     font-family: Poppins;
+//     font-style: normal;
+//     font-size: 70px;
+//     font-weight: 400;
+//     line-height: 20px;
+//     letter-spacing: 0em;
+//     text-align: center;
+
+
+// }
+
+// // #h1{
+// //     height: 20px;
+// //     width: 1046px;
+// //     left: 246px;
+// //     top: 275px;
+// //     border-radius: nullpx;
+
+// //     font-family: Poppins;
+// //     font-size: 120px;
+// //     font-weight: 400;
+// //     line-height: 20px;
+// //     letter-spacing: 0em;
+// //     text-align: right;
+
+
+    
+// //     position: relative;
+// //     width: 1512px;
+// //     height: 982px;
+// //     width: 1046px;
+// //     height: 20px;
+// //     // left: calc(50% - 1046px/2 + 13px);
+// //     // top: calc(50% - 20px/2 - 206px);
+
+// //     font-family: 'Poppins';
+// //     font-style: normal;
+// //     font-weight: 400;
+// //     font-size: 120px;
+// //     line-height: 20px;
+// // /* identical to box height, or 17% */
+
+// //     display: flex;
+// //     text-align: right;
+// //     justify-content: center;
+// //     align-items: center;
+
+// //     color: #424242;
+
+// // }
+
+
+// .registrarse{
+    
+//     // display: flex;
+//     // flex-direction: column;
+//     background-color: #9BC1DE;
+//     height: 118px;
+//     width: 594px;
+//     // left: 459px;
+//     // top: 398px;
+//     border-radius: 30px;
+//     font-family: Poppins;
+//     font-size: 70px;
+//     font-weight: 400;
+//     line-height: 20px;
+//     letter-spacing: 0em;
+//     text-align: center;
+
+
+// }
+
+// .yaTienesCuenta {
+   
+    
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: auto;
+   
+//     height: 982px;
+//     background-color: #A9B2BF;
+//     height: 112px;
+//     width: 1512px;
+//     // left: -66px;
+//     // top: 870px;
+//     border-radius: 30px;
+
+//     font-family: Poppins;
+//     font-size: 45px;
+//     font-weight: 400;
+//     line-height: 20px;
+//     letter-spacing: 0em;
+//     text-align: center;
+
+    
+
+   
+
+
+// } 
+
+// .iniciarSesion{
+//     // display: flex;
+
+//     height: Hug(64px);
+//     width: Hug(276px);
+//     /* left: 777px; */
+//     /* top: 905px; */
+//     border-radius: 0px;
+//     padding: 22px 46px 22px 46px;
+//     font-family: "Poppins";
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 30px;
+//     line-height: 20px;
+//     color: #F9F3F3;
+//     /* display: flex; */
+//     /* flex-direction: row; */
+//     /* align-items: flex-end; */
+//     /* align-self: flex-end; */
+//     /* order: 3; */
+//     /* gap: 10px; */
+//     background-color: #A9B2BF;
+
+// }
+// // h1{
+// //     background-color: variables.$color-principal;
+// //     border-radius: 100%;
+// //     padding: 50px;
+// //     color: rgb(255, 255, 255); 
+// //     font-family: 'Times New Roman';
+// //     div {
+// //         padding-top: 50px;
+// //         padding-right: 30px;
+// //         padding-bottom: 50px;
+// //         padding-left: 80px;
+// //       }
+// // }
