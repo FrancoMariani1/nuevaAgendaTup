@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { contactos } from 'src/app/Core/Interfaces/contacts';
 
 @Component({
   selector: 'app-contactos',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class ContactosComponent implements OnInit {
 
   constructor() { }
+
+contactosFalsos = contactos
 
   ngOnInit(): void {
   }

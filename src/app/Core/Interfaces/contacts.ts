@@ -7,7 +7,8 @@ export interface Contact {
     CelularNumber: string
 }
 
-
+// Agregar geo a la interface geo: Geo y crear interface Geo con sus características
+// Crear el resto de las interfaces que necesito
 
 
 
