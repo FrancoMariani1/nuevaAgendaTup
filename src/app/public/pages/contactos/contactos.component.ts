@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Contact, contactos } from 'src/app/Core/Interfaces/contacts';
+import { UserServicesService } from 'src/app/Core/services/user-services.service';
 @Component({
   selector: 'app-contactos',
   templateUrl: './contactos.component.html',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactosComponent implements OnInit {
 
-  constructor() { }
+  contactos:Contact[] = contactos;
+
+  constructor(private us:UserServicesService) { }
 
   ngOnInit(): void {
-  }
+  //   this.getData() 
+  // }
 
+  // async getData(){
+  //   this.contactos = await this.us.getUsers();
+  // }
+
+  }  
 }

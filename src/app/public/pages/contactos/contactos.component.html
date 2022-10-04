@@ -1,7 +1,25 @@
 <!-- <p>contactos works!</p> -->
 
-<div class="container">
+<!-- <div class="container">
     <div class="buscar">Buscar contacto</div>
     <div class="tarjeta"></div>
 </div>
+   -->
+
+   <!-- <header>
+    <button [routerLink]="['/login']">LOGIN (BORRAR DESPUES)</button>
+    <button [routerLink]="['/contacts/new']" class="roundButton" id="addContact">+</button>
+  </header> -->
+  
+  <!-- <app-tarjeta-contacto *ngFor="let contact of contactos" [contact]="contact">
+    {{contact.first_name}} {{contact.last_name}} {{contact.CelularNumber}}></app-tarjeta-contacto> -->
+    <!-- <app-tarjeta-contacto></app-tarjeta-contacto>   -->
+  <main id="container">
+    <app-tarjeta-contacto *ngFor="let contact of contactos" [contact]="contact">
+      {{contact.first_name}} {{contact.last_name}} {{contact.CelularNumber}}
+
+    </app-tarjeta-contacto>
+
+   
+  </main>
   
