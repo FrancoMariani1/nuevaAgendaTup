@@ -1,25 +1,46 @@
-<!-- <p>contactos works!</p> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link rel="stylesheet" href="contactos.component.scss">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
-<!-- <div class="container">
-    <div class="buscar">Buscar contacto</div>
-    <div class="tarjeta"></div>
-</div>
-   -->
 
-   <!-- <header>
-    <button [routerLink]="['/login']">LOGIN (BORRAR DESPUES)</button>
-    <button [routerLink]="['/contacts/new']" class="roundButton" id="addContact">+</button>
-  </header> -->
   
-  <!-- <app-tarjeta-contacto *ngFor="let contact of contactos" [contact]="contact">
-    {{contact.first_name}} {{contact.last_name}} {{contact.CelularNumber}}></app-tarjeta-contacto> -->
-    <!-- <app-tarjeta-contacto></app-tarjeta-contacto>   -->
-  <main id="container">
-    <app-tarjeta-contacto *ngFor="let contact of contactos" [contact]="contact">
-      {{contact.first_name}} {{contact.last_name}} {{contact.CelularNumber}}
 
-    </app-tarjeta-contacto>
+<body>
 
+    <section>
+            <div class="listaContactos">
+
+                <div class="swiper-slide card" *ngFor="let contacto of contactosFalsos">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="https://consideringapple.com/wp-content/uploads/2021/12/Beige-icon-1-1024x1024.jpg" alt="">
+                        </div>
+                        <div class="media-icons">
+                            <i class="fa-sharp fa-solid fa-earth-americas"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Someone Name</span>
+                            <span class="profession">Web Developer</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="button">
+                            <button class="aboutMe">Delete</button>
+                            <button class="hireMe">Editar <i class="fa-solid fa-wand-magic-sparkles"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+    </section>
    
-  </main>
-  
+</body>
+
