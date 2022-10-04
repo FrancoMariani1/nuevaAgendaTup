@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { contactos } from 'src/app/Core/Interfaces/contacts';
+
+import { Contact, contactos } from 'src/app/Core/Interfaces/contacts';
+import { UserServicesService } from 'src/app/Core/services/user-services.service';
+
+
+
 
 @Component({
   selector: 'app-contactos',
@@ -8,11 +13,19 @@ import { contactos } from 'src/app/Core/Interfaces/contacts';
 })
 export class ContactosComponent implements OnInit {
 
-  constructor() { }
+  contactos:Contact[] = contactos;
+
+  constructor(private us:UserServicesService) { }
 
 contactosFalsos = contactos
 
   ngOnInit(): void {
-  }
+  //   this.getData() 
+  // }
 
+  // async getData(){
+  //   this.contactos = await this.us.getUsers();
+  // }
+
+  }  
 }
