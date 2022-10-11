@@ -2,11 +2,14 @@
 <link rel="stylesheet" href="contactos.component.scss">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
+
+  
+
 <body>
     <section>
             <div class="listaContactos">
 
-                <div class="swiper-slide card" *ngFor="let contacto of contactosFalsos">
+                <div class="swiper-slide card" *ngFor="let contacto of contactos">
                     <div class="card-content">
                         <div class="image">
                             <img src={{contacto.avatar}} alt="">
@@ -39,3 +42,4 @@
     </section>
    
 </body>
+
