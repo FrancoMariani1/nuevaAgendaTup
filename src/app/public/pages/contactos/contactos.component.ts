@@ -17,7 +17,7 @@ export class ContactosComponent implements OnInit {
 
   constructor(private us:UserServicesService) { }
 
-contactosFalsos = contactos
+  contactosFalsos = contactos
 
   ngOnInit(): void {
   //   this.getData() 
