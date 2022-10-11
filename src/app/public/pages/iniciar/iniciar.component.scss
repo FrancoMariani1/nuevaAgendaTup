@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    flex-direction: column;
+
+    font-family: Poppins;
+}
+
+.inicarsesion-header{
+    color: black;
+    text-align: center;
+    font-size: 300%;
+}
+
+.Iniciarsesion-Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#99B0C9;
+    border-radius: 5%;
+    width: 603px;
+    height: 395px;
+
+}

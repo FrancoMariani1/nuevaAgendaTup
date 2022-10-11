@@ -1,28 +1,83 @@
-.container  {
+// .container  {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// 
+//     height: 100vh;
+
+//     // border-radius: 0px;
+//     
+//     padding: 0;
+
+// }
+
+// *{
+//     border: solid 1px red;
+// }
+
+// .Registarse-header{
+//     color: black;
+//     text-align: center;
+//     font-size: 300%;
+// }
+
+
+// .tarjeta {
+// flex-direction:column;
+// display: flex;
+// justify-content: center;
+// height: 340px;
+// width: 360px;
+// left: 500px;
+// top: 242px;
+// border-radius: 0px;
+// background: #99B0C9;
+// border-radius: 5%;
+// padding: 15px 10px;
+// }
+
+// .button{
+//     display: flex;
+
+
+// }
+
+.container{
+    background-color: #BBCDDB;
+    background-size:100vh;
+    font-family: Poppins;
+
+}
+
+.Registrarse-header{
+    color: black;
+    text-align: center;
+    font-size: 300%;
+}
+.Registrarse-Form{
+    // text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: auto;
-
-    border-radius: 0px;
-    background-color: #BBCDDB;
-    padding: 0;
-    font-family: Poppins;
+    background-color:#99B0C9;
+    border-radius: 5%;
+    width: 400px;
+    height: 330px;
 }
 
 
-.tarjeta {
-flex-direction:column;
-display: flex;
-justify-content: center;
-height: 340px;
-width: 360px;
-left: 500px;
-top: 242px;
-border-radius: 0px;
-background: #99B0C9;
-border-radius: 5%;
-padding: 15px 10px;
+.Registrarse-Form h3{
+    text-align: left;
+    color:#fff;
+    margin-left: 40px;
+}
 
+.login input[type = "Email"].login input[type="username"],
+.login input[type="password"]
+{
+ display: flex;
+ font: Poppins;
+ border: 2px rgb(233, 230, 230);
+ padding-left: 10px;
 }
