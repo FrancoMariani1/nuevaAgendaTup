@@ -10,7 +10,7 @@ export class ContactosComponent implements OnInit {
 
   constructor() { }
 
-contactosFalsos = contactos
+  contactosFalsos = contactos
 
   ngOnInit(): void {
   }
