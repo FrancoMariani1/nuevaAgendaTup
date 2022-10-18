@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Contact } from 'Core/Interfaces/Contacts';
+// import { Contact } from 'Core/Interfaces/Contacts';
 
 @Component({
   selector: 'app-principal',

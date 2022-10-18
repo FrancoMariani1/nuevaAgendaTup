@@ -17,7 +17,12 @@ const routes: Routes = [
   {
     path: "contactos",
     loadChildren: () => import('./public/pages/contactos/contactos.module').then(m => m.ContactosModule)
+  },
+  {
+    path: "agregar",
+    loadChildren: () => import('./public/pages/agregar/agregar.module').then(m => m.AgregarModule)
   }
+
 
 
 ];
