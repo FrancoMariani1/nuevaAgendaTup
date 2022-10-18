@@ -1,11 +1,25 @@
+<div class="inicarsesion-header">
+    <h2>Mi agenda virtual</h2> </div>
+
 <div class="container">
-    <div class="inicarsesion-header">
-        <h1>Mi agenda virtual</h1>
-    </div>
-    <div class="Iniciarsesion-form">
-        <h3>Nombre</h3>
-        <input type="Username" placeholder="Username">
-        <h3>Contraseña </h3>
-        <input type="password" placeholder="Password"> 
-        <input type="button" value="Iniciar sesion" class="Iniciarsesion-buttom">   
-</div>
+        <form (ngSubmit)="login(form)" #form="ngForm">
+            <!--al apretar submit se envia el elemento form -->
+            <div class="inputs">
+                <label for=" email">Email</label>
+                <input type="email" name="email" id="email" autocomplete="email" placeholder="Ingrese su email"
+                    [(ngModel)]="authData.userName" #email="ngModel">
+
+            </div>
+            <div *ngIf="email.touched && email.errors">El correo electronico no es valido</div>
+            <div class="inputs">
+                <label for="passaword">Contraseña</label>
+                <input type="passaword" name="passaword" id="password" autocomplete="current-password"
+                    placeholder="Ingrese su contraseña" [(ngModel)]="authData.password " [minLength]="6"
+                    #password="ngModel">
+            </div>
+            <div *ngIf="password.touched && password.errors">La contraseña no es valida.</div>
+            <div>
+                <button type="submit" [disabled]="form.valid"> Iniciar sesion</button>
+            </div>
+        </form>
+ </div>
