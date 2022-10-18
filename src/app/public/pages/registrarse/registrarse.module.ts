@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { RegistrarseRoutingModule } from './registrarse-routing.module';
 import { RegistrarseComponent } from './registrarse.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -10,6 +11,7 @@ import { RegistrarseComponent } from './registrarse.component';
     RegistrarseComponent
   ],
   imports: [
+    FormsModule,
     CommonModule,
     RegistrarseRoutingModule
   ]

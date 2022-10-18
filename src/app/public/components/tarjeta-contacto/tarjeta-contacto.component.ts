@@ -12,7 +12,8 @@ Contactos: any;
 
   constructor() { }
 
-  @Input() contact:Contact = {} as Contact;
+  @Input() contacto:Contact = {} as Contact;
+  emergente:boolean = false;
 
   ngOnInit(): void {
   }
