@@ -6,40 +6,13 @@
   
 
 <body>
+    <li class="agregar"><a [routerLink]="['/agregar']">+</a></li>
     <section>
             <div class="listaContactos">
 
-                <div class="swiper-slide card" *ngFor="let contacto of contactos">
-                    <div class="card-content">
-                        <div class="image">
-                            <img src={{contacto.avatar}} alt="">
-                        </div>
-                        <div class="media-icons">
-                            <i class="fa-sharp fa-solid fa-earth-americas"></i>
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </div>
-                        <div class="name-descripcion">
-                            <span class="name">{{contacto.first_name}}</span>
-                            <span class="descripcion">{{contacto.description}}</span>
-                        </div>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <div class="button">
-                            <button class="delete">Eliminar </button>
-                            <button class="editar">Editar <i class="fa-solid fa-wand-magic-sparkles"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-
+                <app-tarjeta-contacto class="swiper-slide card" *ngFor="let contacto of contactos" [contacto]="contacto"></app-tarjeta-contacto>
+                    
             </div>
-
     </section>
-   
 </body>
 

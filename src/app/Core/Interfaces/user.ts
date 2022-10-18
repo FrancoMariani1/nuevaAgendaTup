@@ -7,8 +7,5 @@ export interface IUser{
     userName: string;
   }
 
-  export const defaultUser = {
-    id: "User ID",
-    username: "Username",
-    role: "CLIENT"
+
   }
