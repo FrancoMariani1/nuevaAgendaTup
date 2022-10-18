@@ -65,4 +65,18 @@ export class AuthService {
     this.loggedIn = false;
     window.location.reload();
   }
+
+  async registrarse(authentication:iAuthRequest): Promise<boolean> {
+    const res = await fetch (BACKEND_URL + '/api/authentication/authenticate',{
+      method: "POST",
+      headers: {'Content-Type': 'application/json' },
+      body: JSON.stringify(authentication),
+    })
+    if(!res.ok) return false
+    const token = await res.text;
+    console.log(token)
+    if (!token) return false;
+    this.setSession(token);
+    return true;
+  }
 }
