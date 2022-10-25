@@ -2,7 +2,20 @@
 <div id="container">
     <h1>Agregar contacto</h1>
     <form (ngSubmit)="agregar(form)" #form="ngForm">
-      <input type="file" name="myImage" accept="image/png, image/gif, image/jpeg" />
+
+      <div class="image-upload">
+        <label for="file-input">
+          <img src="https://us.123rf.com/450wm/alexwhite/alexwhite1503/alexwhite150303616/37937871-c%C3%A1mara-icono-plana-azul.jpg"/>
+        </label>
+      
+       <input id="file-input" type="file" style="display:none" name="myImage" accept="image/png, image/gif, image/jpeg" />
+      </div>
+
+       <!-- <div class="inputs">
+      
+      <input type="file" name="myImage" accept="image/png, image/gif, image/jpeg"/>
+      
+      </div>  -->
         
         <div class="inputs">
             <label for="Nombre"></label>
