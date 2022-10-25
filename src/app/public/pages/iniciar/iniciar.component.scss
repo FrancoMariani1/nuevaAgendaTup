@@ -1,19 +1,6 @@
 .container{
     display: flex;
     flex-direction: column;
-
-    font-family: Poppins;
-}
-
-.inicarsesion-header{
-    color: black;
-    text-align: center;
-    font-size: 300%;
-}
-
-.Iniciarsesion-form{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 5% auto;
@@ -21,15 +8,21 @@
     border-radius: 20px;
     width: 400px;
     height: 330px;
-  
+    font-family: Poppins;
 }
-.Iniciarsesion-form  input [type = "buttom"]{
-    height:30px;
-    width:100px;
-    background:#fff;
-    border:1px solid #f2f2f2;
-    border-radius:20px;
-    color: slategrey;
-    text-transform:uppercase;
-    cursor:pointer;
+   
+.inicarsesion-header{
+    color: black;
+    text-align: center;
+    font-size: 300%;
+}
+
+.inputs {
+    margin-top: 30px;
+
+
+}
+
+label{
+    display: block;
 }
