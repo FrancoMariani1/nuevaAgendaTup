@@ -34,7 +34,9 @@ export class IniciarComponent implements OnInit {
   }
 
   login(form:NgForm){
+    console.log(form)
 
+    
   }
 
 }

@@ -6,7 +6,7 @@
             <!--al apretar submit se envia el elemento form -->
             <div class="inputs">
                 <label for=" email">Email</label>
-                <input type="email" name="email" id="email" autocomplete="email" placeholder="Ingrese su email"
+                <input type="email" name="email" id="email" autocomplete="email" placeholder="Ingrese su email" pattern='^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$'
                     [(ngModel)]="authData.userName" #email="ngModel">
 
             </div>
@@ -14,12 +14,12 @@
             <div class="inputs">
                 <label for="passaword">Contraseña</label>
                 <input type="passaword" name="passaword" id="password" autocomplete="current-password"
-                    placeholder="Ingrese su contraseña" [(ngModel)]="authData.password " [minLength]="6"
+                    placeholder="Ingrese su contraseña" [(ngModel)]="authData.password " [minLength]="8"
                     #password="ngModel">
             </div>
             <div *ngIf="password.touched && password.errors">La contraseña no es valida.</div>
             <div>
-                <button type="submit" [disabled]="form.valid"> Iniciar sesion</button>
+                <button type="submit" [disabled]="form.invalid"> Iniciar sesion</button>
             </div>
         </form>
  </div>

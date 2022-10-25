@@ -18,11 +18,25 @@
 }
 
 .inputs {
-    margin-top: 30px;
-
-
+    margin: 0 0 15px;
+    background: #D9D9D9;
+    margin-top: 30px
+    padding 15px;
+    width: 100%;
 }
 
 label{
     display: block;
+}
+
+button{
+    color:#fff;
+    background-color: #7a97ad;
+    width: 100%;
+    margin-top: 10%;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 14px;
+
 }
