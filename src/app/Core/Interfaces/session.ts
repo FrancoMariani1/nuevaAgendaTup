@@ -1,4 +1,4 @@
-import { IUser } from "./user";
+import { User } from "./user";
 
 export interface ISession{
   expiresIn: string;
@@ -8,5 +8,5 @@ export interface ISession{
 export interface IMeData{
   status: boolean;
   message?: string;
-  user?: IUser;
+  user?: User;
 }
