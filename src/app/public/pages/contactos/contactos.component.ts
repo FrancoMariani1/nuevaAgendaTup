@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 import { Contact, contactos } from 'src/app/Core/Interfaces/contacts';
 import { ContactServicesService } from 'src/app/Core/services/contact-services';
 
@@ -18,11 +19,20 @@ export class ContactosComponent implements OnInit {
   constructor(public us:ContactServicesService) { }
 
   ngOnInit(): void {
-    this.getContacts();
-  }  
-
-  async getContacts() {
-    //this.contactos = await this.us.getContacts();debugger;
+    this.getData();
   }
+
+  // ngOnInit(): void {
+  //   this.getContacts();
+  // }  
+
+  async getData() {
+    this.contactos = await this.us.getContacts();
+    console.log(this.contactos)
+  }
+
+  // async getContacts() {
+  //   //this.contactos = await this.us.getContacts();debugger;
+  // }
 
 }

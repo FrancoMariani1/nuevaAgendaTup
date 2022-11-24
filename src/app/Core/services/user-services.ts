@@ -3,7 +3,7 @@ import { User } from '../Interfaces/user'
 @Injectable({
     providedIn: 'root'
   })
-  export class ContactServicesService{
+  export class UserServicesService{
 
     constructor() { }
 
@@ -14,17 +14,17 @@ import { User } from '../Interfaces/user'
           }, 300);
         }); */
     
-        const data = await fetch('https://localhost:57688/api/User');
+        const data = await fetch('https://localhost:7075/api/User');
         return await data.json();
       }
     
       async getUser(id: number): Promise<User[]>  {
-        const data = await fetch('https://localhost:57688/api/User'+id);
+        const data = await fetch('https://localhost:7075/api/User'+id);
         return await data.json();
       }
     
       async deleteUser(id: number): Promise<boolean>  {
-        const res = await fetch('https://localhost:57688/api/User'+id, {
+        const res = await fetch('https://localhost:7075/api/User'+id, {
           method: 'DELETE',
           headers: {
             'Content-type': 'application/json',
@@ -34,7 +34,7 @@ import { User } from '../Interfaces/user'
       }
     
       async AddUser(c: User): Promise<User>  {
-        const res = await fetch('https://localhost:57688/api/User', {
+        const res = await fetch('https://localhost:7075/api/User', {
           method: 'POST',
           headers: {
             'Content-type': 'application/json',
@@ -45,7 +45,7 @@ import { User } from '../Interfaces/user'
       }
     
       async UpdateUser(c: User): Promise<User>  {
-        const res = await fetch('https://localhost:57688/api/User', {
+        const res = await fetch('https://localhost:7075/api/User', {
           method: 'PUT',
           headers: {
             'Content-type': 'application/json',
