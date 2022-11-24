@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+
 import { Contact, contactos } from 'src/app/Core/Interfaces/contacts';
-import { UserServicesService } from 'src/app/Core/services/user-services.service';
+import { ContactServicesService } from 'src/app/Core/services/contact-services';
 
 
 
@@ -13,19 +14,25 @@ import { UserServicesService } from 'src/app/Core/services/user-services.service
 })
 export class ContactosComponent implements OnInit {
 
-  contactos:Contact[] = contactos;
+  contactos:Contact[] = [];
 
-  constructor(private us:UserServicesService) { }
-
-  contactosFalsos = contactos
+  constructor(public us:ContactServicesService) { }
 
   ngOnInit(): void {
-  //   this.getData() 
+    this.getData();
+  }
+
+  // ngOnInit(): void {
+  //   this.getContacts();
+  // }  
+
+  async getData() {
+    this.contactos = await this.us.getContacts();
+    console.log(this.contactos)
+  }
+
+  // async getContacts() {
+  //   //this.contactos = await this.us.getContacts();debugger;
   // }
 
-  // async getData(){
-  //   this.contactos = await this.us.getUsers();
-  // }
-
-  }  
 }

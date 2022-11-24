@@ -19,28 +19,28 @@
         
         <div class="inputs">
             <label for="Nombre"></label>
-            <input type="nombre" name="nombre" id="nombre" autocomplete="nombre" placeholder="Nombre"
+            <input type="nombre" name="nombre" [(ngModel)]="contact.first_name" id="nombre" autocomplete="nombre" placeholder="Nombre"
             >
           </div>
         <div class="inputs">
             <label for="Apellido"></label>
-            <input type="apellido" name="apellido" id="apellido" autocomplete="apellido" placeholder="Apellido"
+            <input type="apellido" name="apellido" [(ngModel)]="contact.last_name" id="apellido" autocomplete="apellido" placeholder="Apellido"
             >
         </div>
         <div class="inputs">
             <label for="Telefono"></label>
-            <input type="telefono" name="telefono" id="telefono" autocomplete="telefono" placeholder="Telefono"
+            <input type="telefono" name="telefono" [(ngModel)]="contact.CelularNumber"  id="telefono" autocomplete="telefono" placeholder="Telefono"
             >
           </div>
           <div class="inputs">
             <label for="Email"></label>
             <input type="email" name="email" id="email" autocomplete="email" placeholder="Email"
-            [(ngModel)]="authData.userName" #email="ngModel" pattern='^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$'
+            [(ngModel)]="contact.email" pattern='^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$'
             >
           </div>
         <div class="inputs">
             <label for="Descripcion"></label>
-            <input type="telefono" name="telefono" id="telefono" autocomplete="telefono" placeholder="Descripcion"
+            <input type="telefono"  [(ngModel)]="contact.description"  name="telefono" id="telefono" autocomplete="telefono" placeholder="Descripcion"
             >
           </div> 
           <div>
