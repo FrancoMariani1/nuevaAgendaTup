@@ -5,17 +5,17 @@
         
         <div class="inputs">
             <label for="Nombre"></label>
-            <input type="nombre" name="nombre" id="nombre" autocomplete="nombre" placeholder="Nombre"
+            <input type="text" name="nombre" id="nombre" autocomplete="nombre" placeholder="Nombre"
             >
           </div>
         <div class="inputs">
             <label for="Apellido"></label>
-            <input type="apellido" name="apellido" id="apellido" autocomplete="apellido" placeholder="Apellido"
+            <input type="text" name="apellido" id="apellido" autocomplete="apellido" placeholder="Apellido"
             >
         </div>
         <div class="inputs">
             <label for="Telefono"></label>
-            <input type="telefono" name="telefono" id="telefono" autocomplete="telefono" placeholder="Telefono"
+            <input type="number" name="telefono" id="telefono" autocomplete="telefono" placeholder="Telefono" 
             >
           </div>
           <div class="inputs">
@@ -26,12 +26,12 @@
           </div>
         <div class="inputs">
             <label for="Descripcion"></label>
-            <input type="telefono" name="telefono" id="telefono" autocomplete="telefono" placeholder="Descripcion"
+            <input type="text" name="telefono" id="telefono" autocomplete="telefono" placeholder="Descripcion"
             >
           </div> 
           <div>
-            <button type="submit" >Guardar</button>
-            <button type="submit" >Cancelar</button>
+            <button class="btn-registro btn-guardar" type="submit" >Guardar</button>
+            <button class="btn-registro btn-cancelar" [routerLink]="['/']" >Cancelar</button>
             
           </div>          
 
