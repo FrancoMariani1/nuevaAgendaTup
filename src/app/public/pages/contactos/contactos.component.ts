@@ -27,7 +27,25 @@ export class ContactosComponent implements OnInit {
   // }  
 
   async getData() {
-    this.contactos = await this.us.getContacts();
+    const contacto = {
+      id: 1,
+      first_name: "test",
+      last_name: "test",
+      avatar: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png",
+      description: "test",
+      email: "test@test.com",
+      TelephoneNumber: "123",
+      CelularNumber: "123"
+    };
+
+    try{
+      this.contactos = await this.us.getContacts();
+    }
+
+    catch(err) {
+      this.contactos = [contacto];
+    }
+
     console.log(this.contactos)
   }
 
