@@ -20,27 +20,25 @@ import { Contact } from 'src/app/Core/Interfaces/contacts';
 //   }
 
 // }
-export class AgregarComponent implements OnInit {
+export class AgregarComponent  {
 
   constructor(private auth:AuthService, private router:Router, private us:ContactServicesService) { }
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  
 
   //Hecho usando NgModel
   authData:iAuthRequest = {
-    userName : "",
-    password : ""
+    UserName : "",
+    Password : ""
   };
 
   contact:Contact = {
     id: 0,
-    CelularNumber: '',
+    CelularNumber: 1,
     description: '',
     email: '',
     first_name: '',
     last_name: '',
-    TelephoneNumber: ''
+    TelephoneNumber: 2
 
   };
 

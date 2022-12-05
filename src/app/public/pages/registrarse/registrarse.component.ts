@@ -17,8 +17,8 @@ export class RegistrarseComponent implements OnInit {
   }
 
   authData:iAuthRequest={
-    userName : "",
-    password : "",
+    UserName : "",
+    Password : "",
   }
 
   async registrarse(form:NgForm){
