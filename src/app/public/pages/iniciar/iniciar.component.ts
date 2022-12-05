@@ -21,8 +21,8 @@ export class IniciarComponent implements OnInit {
 
   //Hecho usando NgModel
   authData:iAuthRequest = {
-    userName : "",
-    password : ""
+    UserName : "",
+    Password : ""
   };
 
 

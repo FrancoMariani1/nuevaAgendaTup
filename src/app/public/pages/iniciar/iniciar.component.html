@@ -7,14 +7,14 @@
             <div class="inputs">
                 <label for=" email">Email</label>
                 <input type="email" name="email" id="email" autocomplete="email" placeholder="Ingrese su email"
-                    [(ngModel)]="authData.userName" #email="ngModel">
+                    [(ngModel)]="authData.UserName" #email="ngModel">
 
             </div>
             <div *ngIf="email.touched && email.errors">El correo electronico no es valido</div>
             <div class="inputs">
                 <label for="password">Contraseña</label>
                 <input type="password" name="password" id="password" autocomplete="current-password"
-                    placeholder="Ingrese su contraseña" [(ngModel)]="authData.password " [minLength]="6"
+                    placeholder="Ingrese su contraseña" [(ngModel)]="authData.Password " [minLength]="6"
                     #password="ngModel">
             </div>
             <div *ngIf="password.touched && password.errors">La contraseña no es valida.</div>
