@@ -51,7 +51,7 @@ export class AgregarComponent implements OnInit {
     const token = await this.auth.login(form.value);
     if(token) this.router.navigate(['']); */
 
-    debugger;
+    
 
     this.us.AddContact(this.contact);
   }
