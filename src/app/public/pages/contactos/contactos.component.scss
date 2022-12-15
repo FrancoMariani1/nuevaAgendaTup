@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -84,4 +83,13 @@ section{
     font-size: 40px;
     
 
+}
+
+a{
+    font-size: 80px;
+    font-weight: 400;
+    text-decoration: none; 
+    border-radius: 100%;
+    //border: 2px solid black;
+    color:#fff;
 }

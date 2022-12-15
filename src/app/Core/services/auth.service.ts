@@ -12,7 +12,7 @@ export class AuthService {
   private loggedIn: boolean = false;
 
   async login(authentication:iAuthRequest): Promise<boolean> {
-    const res = await fetch(BACKEND_URL + '/api/authentication/authenticate', {
+    const res = await fetch(BACKEND_URL + '/api/Authentication/authenticate', {
       method: "POST",
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(authentication),
@@ -67,7 +67,7 @@ export class AuthService {
   }
 
   async registrarse(authentication:iAuthRequest): Promise<boolean> {
-    const res = await fetch (BACKEND_URL + '/api/authentication/authenticate',{
+    const res = await fetch (BACKEND_URL + '/api/Authentication/authenticate',{
       method: "POST",
       headers: {'Content-Type': 'application/json' },
       body: JSON.stringify(authentication),

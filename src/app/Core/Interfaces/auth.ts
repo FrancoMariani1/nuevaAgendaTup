@@ -1,5 +1,5 @@
 export interface iAuthRequest{
-    userName:string;
-    password:string;
+    UserName:string;
+    Password:string;
   }
 

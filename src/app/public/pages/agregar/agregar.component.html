@@ -2,37 +2,50 @@
 <div id="container">
     <h1>Agregar contacto</h1>
     <form (ngSubmit)="agregar(form)" #form="ngForm">
-      <input type="file" name="myImage" accept="image/png, image/gif, image/jpeg" />
+
+      <div class="image-upload">
+        <label for="file-input">
+          <img src="https://us.123rf.com/450wm/alexwhite/alexwhite1503/alexwhite150303616/37937871-c%C3%A1mara-icono-plana-azul.jpg"/>
+        </label>
+      
+       <input id="file-input" type="file" style="display:none" name="myImage" accept="image/png, image/gif, image/jpeg" />
+      </div>
+
+       <!-- <div class="inputs">
+      
+      <input type="file" name="myImage" accept="image/png, image/gif, image/jpeg"/>
+      
+      </div>  -->
         
         <div class="inputs">
             <label for="Nombre"></label>
-            <input type="nombre" name="nombre" id="nombre" autocomplete="nombre" placeholder="Nombre"
+            <input type="text" name="nombre" [(ngModel)]="contact.first_name" id="nombre" autocomplete="nombre" placeholder="Nombre"
             >
           </div>
         <div class="inputs">
             <label for="Apellido"></label>
-            <input type="apellido" name="apellido" id="apellido" autocomplete="apellido" placeholder="Apellido"
+            <input type="text" name="apellido" [(ngModel)]="contact.last_name" id="apellido" autocomplete="apellido" placeholder="Apellido"
             >
         </div>
         <div class="inputs">
             <label for="Telefono"></label>
-            <input type="telefono" name="telefono" id="telefono" autocomplete="telefono" placeholder="Telefono"
+            <input type="number" name="telefono" [(ngModel)]="contact.CelularNumber"  id="telefono" autocomplete="telefono" placeholder="Telefono"
             >
           </div>
           <div class="inputs">
             <label for="Email"></label>
             <input type="email" name="email" id="email" autocomplete="email" placeholder="Email"
-            [(ngModel)]="authData.userName" #email="ngModel" pattern='^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$'
+            [(ngModel)]="contact.email" pattern='^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$'
             >
           </div>
         <div class="inputs">
             <label for="Descripcion"></label>
-            <input type="telefono" name="telefono" id="telefono" autocomplete="telefono" placeholder="Descripcion"
+            <input type="text"  [(ngModel)]="contact.description"  name="telefono" id="telefono" autocomplete="telefono" placeholder="Descripcion"
             >
           </div> 
           <div>
-            <button type="submit" >Guardar</button>
-            <button type="submit" >Cancelar</button>
+            <button class="btn-registro btn-guardar" type="submit" >Guardar</button>
+            <button class="btn-registro btn-cancelar" [routerLink]="['/contactos']" >Cancelar</button>
             
           </div>          
 

@@ -3,6 +3,8 @@ import { iAuthRequest } from 'src/app/Core/Interfaces/auth';
 import { AuthService } from 'src/app/Core/services/auth.service';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import {ContactServicesService } from '../../../Core/services/contact-services';
+import { Contact } from 'src/app/Core/Interfaces/contacts';
 // import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-agregar',
@@ -18,25 +20,38 @@ import { Router } from '@angular/router';
 //   }
 
 // }
-export class AgregarComponent implements OnInit {
+export class AgregarComponent  {
 
-  constructor(private auth:AuthService, private router:Router) { }
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  constructor(private auth:AuthService, private router:Router, private us:ContactServicesService) { }
+  
 
   //Hecho usando NgModel
   authData:iAuthRequest = {
-    userName : "",
-    password : ""
+    UserName : "",
+    Password : ""
+  };
+
+  contact:Contact = {
+    id: 0,
+    CelularNumber: 1,
+    description: '',
+    email: '',
+    first_name: '',
+    last_name: '',
+    TelephoneNumber: 2
+
   };
 
 
   async agregar(form:NgForm){
     //Valor del formulario para no usar NgModel
-    console.log(form.value);
+    /* console.log(form.value);
     const token = await this.auth.login(form.value);
-    if(token) this.router.navigate(['']);
+    if(token) this.router.navigate(['']); */
+
+    
+
+    this.us.AddContact(this.contact);
   }
 
 }

@@ -1,7 +1,6 @@
 .container{
     background-color: #BBCDDB;
     background-size:100vh;
-    font-family: Poppins;
 
 }
 
@@ -23,29 +22,24 @@
     border-radius: 20px;
     width: 350px;
     height: 330px;
-    input[type="button"] {
-        margin-bottom: 5%;
-        height: 30px;
-        width: 110px;
-        background: #fff;
-        border: 1px solid #f2f2f2;
-        border-radius: 20px;
-        color: slategrey;
-    }
-    input [type="Text"]{
-    margin-top: 30px;
-      max-width:400px;
-      width: 80%;
-      line-height:3em;
-      margin:inherit;
-      border-radius: 5px;
-      border:2px solid #f2f2f2;
-      outline:none;
-      padding-left:10px;
-      gap: 20px;
-
+    
+    .btn-registro {
+        height: 3vw;
+        border-radius: 8px;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 1.3vw;
+        color: white;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
+    .btn-guardar {
+        background: limegreen;
+    }
 
+    .btn-cancelar {
+        background: indianred;
+    }
 
 }
