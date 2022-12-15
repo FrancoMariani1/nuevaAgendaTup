@@ -1,12 +1,13 @@
 export interface Contact {
     id: Number,
-    first_name: string,
-    last_name: string,
+    Name: string,
+    LastName: string,
     avatar?: string,
-    description: string,
-    email: string,
+    Description: string,
+    Email: string,
     TelephoneNumber: number,
-    CelularNumber: number
+    CelularNumber: number,
+    UserName: string,
 }
 
 // Agregar geo a la interface geo: Geo y crear interface Geo con sus características
