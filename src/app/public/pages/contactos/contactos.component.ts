@@ -29,13 +29,14 @@ export class ContactosComponent implements OnInit {
   async getData() {
     const contacto = {
       id: 1,
-      first_name: "test",
-      last_name: "test",
+      Name: "test",
+      LastName: "test",
       avatar: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png",
-      description: "test",
-      email: "test@test.com",
+      Description: "test",
+      Email: "test@test.com",
       TelephoneNumber: 123,
-      CelularNumber: 123
+      CelularNumber: 123,
+      UserName: "prueba1"
     };
 
     try{

@@ -16,31 +16,40 @@
       <input type="file" name="myImage" accept="image/png, image/gif, image/jpeg"/>
       
       </div>  -->
-        
+        <div class="inputs">
+            <label for="UserName"></label>
+            <input type="text" name="username" [(ngModel)]="contact.UserName" id="username" autocomplete="username" placeholder="UserName"
+            >
+       </div>
         <div class="inputs">
             <label for="Nombre"></label>
-            <input type="text" name="nombre" [(ngModel)]="contact.first_name" id="nombre" autocomplete="nombre" placeholder="Nombre"
+            <input type="text" name="nombre" [(ngModel)]="contact.Name" id="nombre" autocomplete="nombre" placeholder="Nombre"
             >
           </div>
         <div class="inputs">
             <label for="Apellido"></label>
-            <input type="text" name="apellido" [(ngModel)]="contact.last_name" id="apellido" autocomplete="apellido" placeholder="Apellido"
+            <input type="text" name="apellido" [(ngModel)]="contact.LastName" id="apellido" autocomplete="apellido" placeholder="Apellido"
             >
-        </div>
+          </div>
+        <div class="inputs">
+            <label for="Celular"></label>
+            <input type="number" name="celular" [(ngModel)]="contact.CelularNumber"  id="celular" autocomplete="celular" placeholder="Celular"
+            >
+          </div>
         <div class="inputs">
             <label for="Telefono"></label>
-            <input type="number" name="telefono" [(ngModel)]="contact.CelularNumber"  id="telefono" autocomplete="telefono" placeholder="Telefono"
+            <input type="number" name="telefono" [(ngModel)]="contact.TelephoneNumber"  id="telefono" autocomplete="telefono" placeholder="Telefono"
             >
           </div>
           <div class="inputs">
             <label for="Email"></label>
             <input type="email" name="email" id="email" autocomplete="email" placeholder="Email"
-            [(ngModel)]="contact.email" pattern='^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$'
+            [(ngModel)]="contact.Email" pattern='^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$'
             >
           </div>
         <div class="inputs">
             <label for="Descripcion"></label>
-            <input type="text"  [(ngModel)]="contact.description"  name="telefono" id="telefono" autocomplete="telefono" placeholder="Descripcion"
+            <input type="text"  [(ngModel)]="contact.Description"  name="telefono" id="telefono" autocomplete="telefono" placeholder="Descripcion"
             >
           </div> 
           <div>

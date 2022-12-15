@@ -34,11 +34,12 @@ export class AgregarComponent  {
   contact:Contact = {
     id: 0,
     CelularNumber: 1,
-    description: '',
-    email: '',
-    first_name: '',
-    last_name: '',
-    TelephoneNumber: 2
+    Description: '',
+    Email: '',
+    Name: '',
+    LastName: '',
+    TelephoneNumber: 2,
+    UserName : '',
 
   };
 
