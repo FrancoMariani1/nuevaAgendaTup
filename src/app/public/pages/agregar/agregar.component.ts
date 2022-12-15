@@ -39,7 +39,7 @@ export class AgregarComponent  {
     Name: '',
     LastName: '',
     TelephoneNumber: 2,
-    UserName : '',
+  
 
   };
 
